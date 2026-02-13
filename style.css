@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #182030;
+    color: #fff;
+}
+
+#nav-links {
+   position: fixed;
+   background-color: #17152c;
+   width: 100%;
+   top: 0;
+   z-index: 100;
+   padding: 1.0rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3rem;
+  
+
+}
+
+.menu-link {
+   text-decoration: none;
+   font-weight: 500;
+   color: #fff;
+   position: relative;
+
+}
+
+.menu-link:active {
+    color: #342ABF;
+    transition: 0.3s;
+}
+
+.box-apresentação {
+    position: relative;
+    top: 15rem;
+    left: 5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-apresentação h1 {
+    font-size: 3.5rem;
+}
+
+.img-perfil {
+    width: 30rem;
+    position: relative;
+    left: 60%;
+    bottom: 4rem;
+    border-radius: 20px;
+}
+
+.box-button {
+    position: relative;
+    align-items: center;
+    bottom: 13rem;
+    left: 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.cv-Btn {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 3px;
+    background: #139729;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+.skills {
+    position: relative;
+    left: 5rem;
+    color: #fff;
+    
+
+}
+
+.skills h2 {
+    font-size: 40px;
+}
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 10px;
+}
+
+.box-web {
+    background: #4f596d;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+.box-suporte {
+    background: #4f596d;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+.box-agentes {
+    background: #4f596d;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 10px;
+}
+.box-Git {
+    background: #4f596d;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.box-web img {
+    width: 50px;
+    height: 50px;
+}
+
+.box-suporte img {
+    width: 50px;
+    height: 50px;
+}
+
+.box-agentes img {
+    width: 50px;
+}
+
+.box-Git img {
+    width: 50px;
+}
+
+.meus-projetos {
+    position: relative;
+    left: 5rem;
+    color: #fff;
+    
+}
+
+.projetos-title {
+    font-size: 40px;
+}
+
+.projetos-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 4, 3fr);
+}
+
+.caixa-projeto {
+  background-color: #342ABF;
+}
+
+
+.img-projeto {
+    width: 350px;
+}
+
+.info-projetos {
+
+}
+
+.descrição-projetos {
+
+}
