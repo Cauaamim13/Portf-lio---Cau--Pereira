@@ -203,9 +203,38 @@ body {
 }
 
 .info-projetos {
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
 }
 
 .descrição-projetos {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1,6;
+
+}
+
+.contatos {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 2rem;
+}
+
+.contatos h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.redes a {
+    text-decoration: none;
+   color: rgba(255, 255, 255, 0.8);
+    
 }
