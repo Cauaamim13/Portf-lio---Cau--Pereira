@@ -14,21 +14,17 @@
     <nav id="nav-links">
         <ul class="menu">
             <li> 
-                <a  class="menu-link" href="#apresentacao"> Sobre mim </a>
+                <a  class="menu-link" id="btn-abrir-sobre"  href="#"> Sobre mim </a>
             </li>
             <li> 
                 <a  class="menu-link" href="#skills-set"> Meus Serviços </a>
             </li>
 
             <li>
-                <a  class="menu-link" href="#habilidades"> Habilidades</a>
-            </li>
-
-            <li>
                 <a  class="menu-link" href="#projetos"> Projetos </a>
             </li>
             <li>
-                <a  class="menu-link" href="#contato"> Contato</a>
+                <a  class="menu-link" href="#form-contato"> Contato</a>
             </li>
             
             
@@ -223,19 +219,23 @@
 
 <section class="entre-em-contato">
 
-    <h2>Entre em Contato</h2>
+    <h2 class="title-contato">Contato</h2>
 
-        <form action="" class="form-contato" id="formulario">
+       <form id="form-contato" class="formulario">
+    
+    <div class="campo">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome" required>
+    </div>
 
-        <div class="grupo-form">
-        <input placeholder="Digite seu nome:" type="text" name="nome" class="campo-form">
-        </div>
+    <div class="campo">
+        <label for="mensagem">Sua Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+    </div>
 
-        <div class="grupo-form">
-        <textarea class="campo-form" placeholder="Digite sua mensagem"> </textarea>
-            </div>
+    <button type="submit" class="cv-Btn">Enviar via WhatsApp</button>
 
-            <button type="submit" class="botao-form">Enviar</button>
+</form>
     </form>
 
     </section>
@@ -283,6 +283,29 @@
             <p>&copy; 2026 Cauã Pereira. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <div id="modal-sobre" class="modal-overlay">
+        <div class="modal-conteudo">
+
+            <button id="btn-fechar-sobre" class="fechar-modal">&times;</button>
+
+            <h2>Um pouco sobre mim</h2>
+
+                <div class="texto-sobre">
+    <p>Olá! Meu nome é Cauã, sou estudante de Análise e Desenvolvimento de Sistemas e um desenvolvedor apaixonado por transformar lógica complexa em interfaces funcionais e intuitivas.</p>
+
+    <p>Minha jornada na programação começou na base: iniciei meus estudos com <strong>C e C++</strong>, o que me proporcionou uma compreensão profunda de algoritmos e gestão de memória. Essa solidez me permite transitar com facilidade para linguagens como <strong>Python</strong> e me adaptar rapidamente a novas stacks tecnológicas.</p>
+
+    <p>Hoje, minha atuação prática é focada na construção de aplicações web modernas. Domino a trindade <strong>HTML5, CSS3 e JavaScript</strong> para criar interfaces responsivas e dinâmicas. Tenho evoluído constantemente meus projetos utilizando <strong>React.js</strong> (aplicando componentização e Hooks) e <strong>Node.js</strong> para a construção de back-end e consumo de APIs REST.</p>
+
+    <p>Um dos meus grandes diferenciais é o entusiasmo pela Inteligência Artificial e automação. Tenho experiência prática na integração de APIs de IA (como o Google Gemini) e no desenvolvimento de fluxos inteligentes. Meu objetivo não é apenas escrever código, mas utilizar ferramentas modernas para otimizar o desenvolvimento e entregar soluções inovadoras.</p>
+
+    <p>Sou movido por desafios técnicos e busco sempre aplicar minha versatilidade — navegando do front-end à lógica de dados — para criar sistemas que gerem resultados reais.</p>
+</div>
+
+
+        </div>
+    </div>
     
 </body>
 
