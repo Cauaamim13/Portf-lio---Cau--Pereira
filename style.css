@@ -92,6 +92,10 @@ span {
 }
 
 .cv-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     width: 12rem;
     height: 3rem;
     border-radius: 6px;
@@ -103,15 +107,25 @@ span {
 }
 
 .btn-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 12rem;
     height: 3rem;
-    border-radius: 5px;
-    background:#182030;
-    color:  #139729;
-    border: none;
+    border-radius: 3px;
+    background: transparent; 
+    color: #fff;
+    border: 2px solid #139729; 
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(19, 151, 41, 0.6);
-    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-contato:hover {
+    background: #139729; 
+    color: #fff;
+    box-shadow: 0 0 15px rgba(19, 151, 41, 0.6); 
 }
 
 .skills {
@@ -136,7 +150,7 @@ span {
 }
 
 
-.box-web, .box-suporte, .box-agentes, .box-Git {
+.box-web, .box-suporte, .box-agentes, .box-Git, .box-freelance {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 15px rgba(19, 151, 41, 0.6);
     width: 100%; 
@@ -144,6 +158,8 @@ span {
     text-align: center;
     padding-top: 10px;
     border-radius: 10px;
+    font-size: 14px;
+    
 }
 
 .box-web img {
@@ -223,6 +239,10 @@ span {
 }
 
 .caixa-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     flex: 0 0 350px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -236,6 +256,26 @@ span {
 .caixa-projeto:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.btn-deploy {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 10px 24px;
+    background: #139729;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+.btn-deploy:hover {
+    background: #0f7a21;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(19, 151, 41, 0.6),
+                0 0 30px rgba(19, 151, 41, 0.4);
 }
 
 .seta-carrossel {
@@ -394,6 +434,7 @@ span {
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+  
 }
 
 .modal-overlay.ativo {
@@ -412,6 +453,8 @@ span {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
     transform: translateY(-50px);
     transition: trasnform 0.3s ease;
+    max-height: 85vh;
+    overflow-y: auto;
 }
 
 .modal-overlay.ativo .modal-conteudo {
@@ -447,3 +490,169 @@ span {
     color: #139729;
 }
 
+@media screen and (max-width: 768px) {
+    .menu {
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+    }
+
+    .container-apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 8rem;
+        gap: 2rem;
+    }
+    .box-apresentacao {
+        align-items: center;
+    }
+
+    .box-button {
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .cv-Btn, .btn-contato {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .box-apresentacao h1 {
+     font-size: 2.2rem;
+    }
+
+    .img-perfil {
+     max-width: 250px;
+    }
+
+    .grid-skills {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem; 
+        padding: 1rem; 
+        align-items: stretch; 
+    }
+
+    .box-web, .box-suporte, .box-agentes, .box-freelance {
+        padding: 1.5rem 0.5rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        text-align: center;
+        height: auto !important; 
+        min-height: 0 !important;
+    }
+
+    .box-web img, .box-suporte img, .box-agentes img, .box-freelance img {
+        width: 35px; 
+        margin-bottom: 0.8rem;
+    }
+
+    .box-web h3, .box-suporte h3, .box-agentes h3, .box-freelance h3 {
+        font-size: 0.9rem; 
+        margin-bottom: 0.5rem;
+        word-break: break-word; 
+    }
+
+    .box-web p, .box-suporte p, .box-agentes p, .box-freelance p {
+        font-size: 0.75rem; 
+        line-height: 1.4; 
+        margin: 0; 
+    }
+  
+    .stacks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+    }
+
+    .stacks div img {
+        width: 45px;
+    }
+
+    .seta-carrossel {
+        display: none;
+    }
+
+    .carrossel-container {
+        padding: 0;
+    }
+
+    .caixa-projeto {
+        flex: 0 0 300px;
+    }
+
+    .skills h2, 
+    .projetos-title, 
+    .title-contato, 
+    .redes-sociais h2 {
+        font-size: 2rem;
+        text-align: center; 
+        margin-bottom: 1.5rem;
+    }
+
+    .box-apresentacao h1 {
+        font-size: 1.8rem; 
+    }
+
+    .title-job {
+        font-size: 1.2rem; 
+    }
+
+    .box-web h3, 
+    .box-suporte h3, 
+    .box-agentes h3, 
+    .box-Git h3, 
+    .info-projetos {
+        font-size: 1.2rem; 
+    }
+
+    .formulario {
+        padding: 1.5rem;
+    }
+
+    .redes {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .redes div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .modal-conteudo {
+        width: 95%;
+        padding: 1.5rem;
+      max-height: 85vh;
+      overflow-y: auto;
+    }
+
+    .modal-conteudo h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding-right: 30px;
+    }
+
+    .texto-sobre {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .fechar-modal {
+        top: 10px;
+        right: 15px;
+        font-size: 1.8rem;
+    }
+
+
+}
