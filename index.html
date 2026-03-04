@@ -14,19 +14,22 @@
     <nav id="nav-links">
         <ul class="menu">
             <li> 
-                <a  class="menu-link" id="btn-abrir-sobre"  href="#"> Sobre mim </a>
+                <a  class="menu-link" id="btn-abrir-sobre"  href="#" data-i18n="menu-sobre"> Sobre mim </a>
             </li>
             <li> 
-                <a  class="menu-link" href="#skills-set"> Meus Serviços </a>
+                <a  class="menu-link" href="#skills-set" data-i18n="menu-serviços"> Meus Serviços </a>
             </li>
 
             <li>
-                <a  class="menu-link" href="#projetos"> Projetos </a>
+                <a  class="menu-link" href="#projetos" data-i18n="menu-projetos"> Projetos </a>
             </li>
             <li>
-                <a  class="menu-link" href="#form-contato"> Contato</a>
+                <a  class="menu-link" href="#form-contato" data-i18n="menu-contato"> Contato</a>
             </li>
-            
+
+            <li>
+                <button id="btn-idioma" class="btn-idioma">EN</button>
+            </li>
             
         </ul>
     </nav>
@@ -34,16 +37,16 @@
     <section class="container-apresentacao" id="apresentacao">
 
         <div class="box-apresentacao">
-        <h1> Olá, <span>Mundo</span>!👋​🚀​<br> Eu me chamo Cauã.</h1>
-        <h2 class="title-job"> Desenvolvedor de Software</h2>
+        <h1 data-i18n="h1-hello"> Olá, <span data-i18n="span-mundo">Mundo</span>!👋​🚀​<br> Eu me chamo Cauã.</h1>
+        <h2 class="title-job" data-i18n="title-developer"> Desenvolvedor de Software</h2>
        
-        <p> Graduando em Análise e Desenvolvimento de Sistemas, focado em transformar linhas de código em soluções inovadoras.</p>
+        <p data-i18n="paragrafo-text"> Graduando em Análise e Desenvolvimento de Sistemas, focado em transformar linhas de código em soluções inovadoras.</p>
 
         <div class="box-button">
-        <a href="assets/Cauã Pereira - Desenvolvedor Jr.pdf" download="CV_Cauã_Pereira.pdf" class="cv-Btn"> Baixar CV</a>
+        <a href="assets/Cauã Pereira - Desenvolvedor Jr.pdf" download="CV_Cauã_Pereira.pdf" class="cv-Btn" data-i18n="btn-cv"> Baixar CV</a>
 
       
-          <a href="#form-contato" class="btn-contato">Entre em contato</a>
+          <a href="#form-contato" class="btn-contato" data-i18n="contato-btn">Entre em contato</a>
         </div>
         
     </div>
@@ -56,37 +59,37 @@
 
 
     <section id="skills-set" class="skills">
-        <h2>Skills-Set</h2>
+        <h2 data-i18n="title-skills">Skills-Set</h2>
 
         <div class="grid-skills">
 
         <div class="box-web">
-            <h3>Desenvolvimento Web</h3>
+            <h3 data-i18n="title-web">Desenvolvimento Web</h3>
 
             <img src="https://img.icons8.com/ios/50/laptop-coding.png" alt="laptop-coding"/>
-            <p>Construção de aplicações web responsivas e dinâmicas, atuando na criação de interfaces modernas.</p>
+            <p data-i18n="text-web">Construção de aplicações web responsivas e dinâmicas, atuando na criação de interfaces modernas.</p>
         </div>
 
         <div class="box-suporte">
-            <h3 >Suporte Técnico</h3>
+            <h3 data-i18n="title-suporte" >Suporte Técnico</h3>
 
             <img src="https://img.icons8.com/windows/32/cog-with-wheel.png" alt="cog-with-wheel"/>
-            <p>
+            <p data-i18n="text-suporte">
                 Diagnóstico e resolução ágil de problemas tecnológicos, garantindo a estabilidade de sistemas e entregando soluções eficientes.
             </p>
         </div>
 
         <div class="box-freelance">
-            <h3>Freelance</h3>
+            <h3 data-i18n="title-freelas">Freelance</h3>
             <img src="https://img.icons8.com/ios-filled/50/briefcase.png" alt="freelance"/>
-            <p>Desenvolvimento de projetos sob demanda com atuação profissional como Pessoa Jurídica (PJ), focando em agilidade, comunicação direta e entrega de valor para o seu negócio.</p>
+            <p data-i18n="text-freelas">Desenvolvimento de projetos sob demanda com atuação profissional como Pessoa Jurídica (PJ), focando em agilidade, comunicação direta e entrega de valor para o seu negócio.</p>
         </div>
 
         <div class="box-agentes">
-            <h3 > Agentes de IA </h3>
+            <h3 data-i18n="title-agentes" > Agentes de IA </h3>
 
             <img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" alt="artificial-intelligence"/>
-            <p>
+            <p data-i18n="text-agentes">
                 Integração de Inteligência Artificial e desenvolvimento de chatbots, criando automações inteligentes e fluxos de trabalho otimizados
             </p>
         </div>
@@ -167,7 +170,7 @@
     </section>
 
     <section id="projetos" class="meus-projetos">
-        <h2 class="projetos-title"> Meus Projetos </h2>
+        <h2 class="projetos-title" data-i18n="title-projects"> Meus Projetos </h2>
 
         <div class="carrossel-container">
 
@@ -177,40 +180,43 @@
 
         <div class="caixa-projeto">
             <img src="assets/mercado-Livre.png" class="img-projeto">
-            <h3 class="info-projetos">Mercado Livre</h3>
-            <p class="descrição-projetos">Uma réplica responsiva da interface principal do Mercado Livre, desenvolvida com CSS Grid e manipulação otimizada do DOM.</p>
+            <h3 class="info-projetos" data-i18n="title-mercado">Mercado Livre</h3>
+            <p class="descrição-projetos" data-i18n="desc-mercado">Uma réplica responsiva da interface principal do Mercado Livre, desenvolvida com CSS Grid e manipulação otimizada do DOM.</p>
 
-            <a href="https://clonemercado-livre.vercel.app/" target="_blank" class="btn-deploy">Acessar Projeto</a>
+            <a href="https://clonemercado-livre.vercel.app/" target="_blank" class="btn-deploy" data-i18n="btn-acessar">Acessar Projeto</a>
             </div>
 
         <div class="caixa-projeto">
             <img src="assets/conversor-de-moedas.png" class="img-projeto">
-            <h3 class="info-projetos">Conversor de Moedas</h3>
-            <p class="descrição-projetos">Uma aplicação web moderna para conversão de moedas que consome dados reais de uma API RESTful, oferecendo cotações atualizadas a cada 30 segundos e cálculo instantâneo.</p>
+            <h3 class="info-projetos" data-i18n="title-conversor">Conversor de Moedas</h3>
+            <p class="descrição-projetos" data-i18n="desc-conversor">Uma aplicação web moderna para conversão de moedas que consome dados reais de uma API RESTful, oferecendo cotações atualizadas a cada 30 segundos e cálculo instantâneo.</p>
 
-               <a href="https://conversor-de-moedas-sable-chi.vercel.app/" target="_blank" class="btn-deploy">Acessar Projeto</a>
+               <a href="https://conversor-de-moedas-sable-chi.vercel.app/" target="_blank" class="btn-deploy" data-i18n="btn-acessar">Acessar Projeto</a>
         </div>
+
         <div class="caixa-projeto">
             <img src="assets/mario-brothers.png" class="img-projeto">
-            <h3 class="info-projetos">Mario Brothers - Encanadores</h3>
-            <p class="descrição-projetos">Um site fictício de uma empresa de encanamento inspirado nos irmãos Mario & Luigi. O projeto foi desenvolvido com HTML5, CSS3 e JavaScript, com foco em interatividade e responsividade.
+            <h3 class="info-projetos" data-i18n="title-mario">Mario Brothers - Encanadores</h3>
+            <p class="descrição-projetos" data-i18n="desc-mario">Um site fictício de uma empresa de encanamento inspirado nos irmãos Mario & Luigi. O projeto foi desenvolvido com HTML5, CSS3 e JavaScript, com foco em interatividade e responsividade.
 </p>
 
-       <a href="https://cauaamim13.github.io/Mario-Brothers/" target="_blank" class="btn-deploy">Acessar Projeto</a>
+       <a href="https://cauaamim13.github.io/Mario-Brothers/" target="_blank" class="btn-deploy" data-i18n="btn-acessar">Acessar Projeto</a>
         </div>
+
         <div class="caixa-projeto">
             <img src="assets/cadastro-de-usuarios.png" class="img-projeto">
-            <h3 class="info-projetos">Cadastro de Usuários</h3>
-            <p class="descrição-projetos">Aplicação web para cadastro e gerenciamento de usuários, desenvolvida com React + Vite.</p>
+            <h3 class="info-projetos" data-i18n="title-cadastro">Cadastro de Usuários</h3>
+            <p class="descrição-projetos" data-i18n="desc-cadastro">Aplicação web para cadastro e gerenciamento de usuários, desenvolvida com React + Vite.</p>
 
-               <a href="" target="_blank" class="btn-deploy">Acessar Projeto</a>
+               <a href="" target="_blank" class="btn-deploy" data-i18n="btn-acessar">Acessar Projeto</a>
         </div>
+
         <div class="caixa-projeto">
             <img src="assets/form-de-reembolso.png" class="img-projeto">
-            <h3 class="info-projetos">Formulário de Reembolso</h3>
-            <p class="descrição-projetos">Formulário de reembolso com integração via API do N8n, para um Workflow de agente de IA.</p>
+            <h3 class="info-projetos" data-i18n="title-formReembolso">Formulário de Reembolso</h3>
+            <p class="descrição-projetos" data-i18n="desc-formReembolso">Formulário de reembolso com integração via API do N8n, para um Workflow de agente de IA.</p>
 
-               <a href="" target="_blank" class="btn-deploy">Acessar Projeto</a>
+               <a href="" target="_blank" class="btn-deploy" data-i18n="btn-acessar">Acessar Projeto</a>
         </div>
 
         </div>
@@ -224,21 +230,21 @@
 
 <section class="entre-em-contato">
 
-    <h2 class="title-contato">Contato</h2>
+    <h2 class="title-contato" data-i18n="title-contatos">Contato</h2>
 
        <form id="form-contato" class="formulario">
     
     <div class="campo">
-        <label for="nome">Seu Nome:</label>
-        <input type="text" id="nome" placeholder="Seu nome" required>
+        <label for="nome" data-i18n="label-nome">Seu Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome" data-i18n="input-name" required>
     </div>
 
     <div class="campo">
-        <label for="mensagem">Sua Mensagem:</label>
-        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+        <label for="mensagem" data-i18n="label-mensagem">Sua Mensagem:</label>
+        <textarea id="mensagem" rows="4" placeholder="Digite sua mensagem..." data-i18n="textarea-mensagem" required></textarea>
     </div>
 
-    <button type="submit" class="cv-Btn">Enviar via WhatsApp</button>
+    <button type="submit" class="cv-Btn" data-i18n="btn-enviar">Enviar via WhatsApp</button>
 
 </form>
     </form>
@@ -246,7 +252,7 @@
     </section>
 
     <section class="redes-sociais">
-     <h2>Redes Sociais</h2>
+     <h2 data-i18n="title-redes-sociais">Redes Sociais</h2>
 
     <div class="redes">
 
@@ -285,7 +291,7 @@
 
 <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Cauã Pereira. Todos os direitos reservados.</p>
+            <p data-i18n="data-footer">&copy; 2026 Cauã Pereira. Todos os direitos reservados.</p>
         </div>
     </footer>
 
@@ -294,18 +300,18 @@
 
             <button id="btn-fechar-sobre" class="fechar-modal">&times;</button>
 
-            <h2>Um pouco sobre mim</h2>
+            <h2 data-i18n="title-sobreMim">Um pouco sobre mim</h2>
 
                 <div class="texto-sobre">
-    <p>Olá! Meu nome é Cauã, sou estudante de Análise e Desenvolvimento de Sistemas e um desenvolvedor apaixonado por transformar lógica complexa em interfaces funcionais e intuitivas.</p>
+    <p data-i18n="text-p1">Olá! Meu nome é Cauã, sou estudante de Análise e Desenvolvimento de Sistemas e um desenvolvedor apaixonado por transformar lógica complexa em interfaces funcionais e intuitivas.</p>
 
-    <p>Minha jornada na programação começou na base: iniciei meus estudos com <strong>C e C++</strong>, o que me proporcionou uma compreensão profunda de algoritmos e gestão de memória. Essa solidez me permite transitar com facilidade para linguagens como <strong>Python</strong> e me adaptar rapidamente a novas stacks tecnológicas.</p>
+    <p data-i18n="text-p2">Minha jornada na programação começou na base: iniciei meus estudos com <strong>C e C++</strong>, o que me proporcionou uma compreensão profunda de algoritmos e gestão de memória. Essa solidez me permite transitar com facilidade para linguagens como <strong>Python</strong> e me adaptar rapidamente a novas stacks tecnológicas.</p>
 
-    <p>Hoje, minha atuação prática é focada na construção de aplicações web modernas. Domino a trindade <strong>HTML5, CSS3 e JavaScript</strong> para criar interfaces responsivas e dinâmicas. Tenho evoluído constantemente meus projetos utilizando <strong>React.js</strong> (aplicando componentização e Hooks) e <strong>Node.js</strong> para a construção de back-end e consumo de APIs REST.</p>
+    <p data-i18n="text-p3">Hoje, minha atuação prática é focada na construção de aplicações web modernas. Domino a trindade <strong>HTML5, CSS3 e JavaScript</strong> para criar interfaces responsivas e dinâmicas. Tenho evoluído constantemente meus projetos utilizando <strong>React.js</strong> (aplicando componentização e Hooks) e <strong>Node.js</strong> para a construção de back-end e consumo de APIs REST.</p>
 
-    <p>Um dos meus grandes diferenciais é o entusiasmo pela Inteligência Artificial e automação. Tenho experiência prática na integração de APIs de IA (como o Google Gemini) e no desenvolvimento de fluxos inteligentes. Meu objetivo não é apenas escrever código, mas utilizar ferramentas modernas para otimizar o desenvolvimento e entregar soluções inovadoras.</p>
+    <p data-i18n="text-p4">Um dos meus grandes diferenciais é o entusiasmo pela Inteligência Artificial e automação. Tenho experiência prática na integração de APIs de IA (como o Google Gemini) e no desenvolvimento de fluxos inteligentes. Meu objetivo não é apenas escrever código, mas utilizar ferramentas modernas para otimizar o desenvolvimento e entregar soluções inovadoras.</p>
 
-    <p>Sou movido por desafios técnicos e busco sempre aplicar minha versatilidade — navegando do front-end à lógica de dados — para criar sistemas que gerem resultados reais.</p>
+    <p data-i18n="text-p5">Sou movido por desafios técnicos e busco sempre aplicar minha versatilidade — navegando do front-end à lógica de dados — para criar sistemas que gerem resultados reais.</p>
 </div>
 
 

@@ -48,6 +48,40 @@ body {
     transition: 0.3s;
 }
 
+.btn-idioma {
+    background: transparent;
+    color: #ffffff; 
+    border: none;
+    padding: 0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-left: 3rem; 
+}
+
+
+.btn-idioma::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #139729; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease;
+}
+
+.btn-idioma:hover {
+    color: #139729; 
+}
+
+.btn-idioma:hover::after {
+    transform: scaleX(1); 
+}
 .container-apresentacao {
     max-width: 1200px;
     margin: 10rem auto 4rem auto;
@@ -518,6 +552,11 @@ span {
     .cv-Btn, .btn-contato {
         width: 100%;
         max-width: 300px;
+    }
+
+    .btn-idioma {
+        margin-left: 0; 
+        margin-top: 1rem; 
     }
 
     .box-apresentacao h1 {
