@@ -554,6 +554,11 @@ span {
         max-width: 300px;
     }
 
+    .btn-idioma {
+        margin-left: 0; 
+        margin-top: 1rem; 
+    }
+
     .box-apresentacao h1 {
      font-size: 2.2rem;
     }
