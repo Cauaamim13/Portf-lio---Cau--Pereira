@@ -30,7 +30,7 @@ const mensagem = document.getElementById('mensagem').value;
 const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
 const textoCodificado = encodeURIComponent(texto);
 
-const numero = '21975404728';
+const numero = '+5521975404728';
 
 const url = `https://whatsa.me/${numero}/?t=${textoCodificado}`;
 
@@ -127,7 +127,7 @@ const traducoes = {
         "paragrafo-text": "Systems Analysis and Development student, focused on transforming lines of code into innovative solutions.",
         
         "btn-cv": "Download CV",
-        "contato-btn": "Get in touch",
+        "contato-btn": "Contact Me",
         
         "title-skills": "Skills-Set",
         "title-web": "Web Development",
@@ -163,7 +163,7 @@ const traducoes = {
         "title-redes-sociais": "Social Media",
         "data-footer": "&copy; 2026 Cauã Pereira. All rights reserved.",
         
-        "title-sobreMim": "A little about me",
+        "title-sobreMim": "About me",
         "text-p1": "Hello! My name is Cauã, I'm a Systems Analysis and Development student and a developer passionate about transforming complex logic into functional and intuitive interfaces.",
         "text-p2": "My programming journey started at the base: I began my studies with <strong>C and C++</strong>, which provided me with a deep understanding of algorithms and memory management. This solid foundation allows me to easily transition to languages like <strong>Python</strong> and quickly adapt to new technological stacks.",
         "text-p3": "Today, my practical work is focused on building modern web applications. I master the trinity of <strong>HTML5, CSS3, and JavaScript</strong> to create responsive and dynamic interfaces. I have constantly evolved my projects using <strong>React.js</strong> (applying componentization and Hooks) and <strong>Node.js</strong> for backend construction and REST API consumption.",
