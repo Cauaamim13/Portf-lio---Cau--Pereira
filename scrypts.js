@@ -92,6 +92,8 @@ const traducoes = {
         "desc-mario": "Um site fictício de uma empresa de encanamento inspirado nos irmãos Mario & Luigi. O projeto foi desenvolvido com HTML5, CSS3 e JavaScript, com foco em interatividade e responsividade.",
         "title-cadastro": "Cadastro de Usuários",
         "desc-cadastro": "Aplicação web para cadastro e gerenciamento de usuários, desenvolvida com React + Vite.",
+        "title-wpp": "Gerador de Link do WhatsApp",
+        "desc-wpp": "Uma ferramenta prática desenvolvida para criar links diretos e personalizados do WhatsApp com mensagens pré-definidas.",
         "title-formReembolso": "Formulário de Reembolso",
         "desc-formReembolso": "Formulário de reembolso com integração via API do N8n, para um Workflow de agente de IA.",
         
@@ -148,6 +150,8 @@ const traducoes = {
         "desc-mario": "A fictional website for a plumbing company inspired by the Mario & Luigi brothers. The project was developed with HTML5, CSS3, and JavaScript, focusing on interactivity and responsiveness.",
         "title-cadastro": "User Registration",
         "desc-cadastro": "Web application for user registration and management, developed with React + Vite.",
+        "title-wpp": "WhatsApp Link Generator",
+        "desc-wpp": "A practical tool developed to create direct and customized WhatsApp links with pre-defined messages.",
         "title-formReembolso": "Reimbursement Form",
         "desc-formReembolso": "Reimbursement form with n8n API integration for an AI agent workflow.",
         
