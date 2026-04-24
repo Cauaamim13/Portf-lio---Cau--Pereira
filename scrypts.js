@@ -144,6 +144,8 @@ const traducoes = {
         "title-projects": "My Projects",
         "title-mercado": "Mercado Livre",
         "desc-mercado": "A responsive replica of the main Mercado Livre interface, developed with CSS Grid and optimized DOM manipulation.",
+        "title-cashback": "CalculeCash",
+        "desc-cashback": "This project was developed as a solution to a technical challenge. It is a Full-Stack application that simulates a cashback calculation and registration system for a Fintech, applying specific business rules for standard and VIP customers.",
         "title-conversor": "Currency Converter",
         "desc-conversor": "A modern web application for currency conversion that consumes real data from a RESTful API, offering quotes updated every 30 seconds and instant calculation.",
         "title-mario": "Mario Brothers - Plumbers",
